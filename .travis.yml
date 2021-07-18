@@ -7,7 +7,7 @@ before_install:
 
 
 script:
-  - docker run  hlonza/docker-react npm run test -- --coverage
+  - docker run -e CI=true hlonza/docker-react npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
