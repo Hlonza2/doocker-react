@@ -7,4 +7,4 @@ before_install:
 
 
 script:
-  - docker run  hlonza/docker-react npm test -- --coverage
+  - docker run  hlonza/docker-react npm run test -- --coverage
